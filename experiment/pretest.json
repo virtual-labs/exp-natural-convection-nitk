@@ -2,38 +2,85 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Conduction plus fluid flow in motion is known as",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Radiation",
+        "b": "Conduction",
+        "c": "Convection",
+        "d": "Heat exchanger"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "It is convection i.e. conduction plus some velocity. It is the process of energy transport affected by the mixing of a fluid medium.",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": ""
+    },
+    {
+      "question": "A finned tube hot water radiator with a fan blowing air over it is kept in rooms during winter. The major portion of the heat transfer from the radiation is due to",
+      "answers": {
+        "a": "Combined conduction and radiation",
+        "b": "Radiation to the surroundings",
+        "c": "Better conduction",
+        "d": "Convection to the air"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "Convection is a process in which thermal energy is transferred between solid and fluid flowing through it."
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Convection heat transfer coefficient depends upon.",
+      "answers": {
+        "a": "Geometry of surface",
+        "b": "Characteristics of fluid",
+        "c": "Thermal properties of fluid",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Which of the following is true about Convection?",
+      "answers": {
+        "a": "Convection is the process of heat transfer in fluids by the actual motion of matter",
+        "b": "It happens in liquids and gasses",
+        "c": "It may be natural or forced",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Forced convection happens when the fluid is kept in motion by an external means, such as a turbine or a fan.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
     }
   ]
 }
