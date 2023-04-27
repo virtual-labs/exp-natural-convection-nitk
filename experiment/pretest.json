@@ -13,7 +13,7 @@
         "a": "",
         "b": "",
         "c": "It is convection i.e. conduction plus some velocity. It is the process of energy transport affected by the mixing of a fluid medium.",
-        "d": ""
+        "d": "beginner"
       },
       "correctAnswer": "c",
       "difficulty": ""
@@ -33,7 +33,7 @@
         "d": "Convection is a process in which thermal energy is transferred between solid and fluid flowing through it."
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
       "question": "Convection heat transfer coefficient depends upon.",
@@ -50,7 +50,7 @@
         "d": ""
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
       "question": "Which of the following is true about Convection?",
@@ -67,7 +67,7 @@
         "d": ""
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "beginner"
     },
     {
       "question": "Forced convection happens when the fluid is kept in motion by an external means, such as a turbine or a fan.",
@@ -80,7 +80,7 @@
         "b": ""
       },
       "correctAnswer": "a",
-      "difficulty": ""
+      "difficulty": "beginner"
     }
   ]
 }
