@@ -16,7 +16,7 @@
         "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
       "question": "The rate equation used to describe the mechanism of convection is called Newton's law of cooling. So rate of heat flow by convection doesn't depend on",
@@ -33,7 +33,7 @@
         "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "It is directly proportional to all of above except time."
+      "difficulty": "advanced"
     },
     {
       "question": "Under normal conditions, the heat transfer due to convection is _______ to the temperature difference between the parts.",
@@ -50,7 +50,7 @@
         "d": ""
       },
       "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
       "question": "Which low comes into play in natural convection?",
@@ -67,7 +67,7 @@
         "d": ""
       },
       "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "advanced"
     },
     {
       "question": "According to Newton's law of cooling, the rate of convective heat transfer is ______ to heat transfer surface area, convective heat transfer coefficient and temperature difference. ",
@@ -84,7 +84,7 @@
         "d": ""
       },
       "correctAnswer": "a",
-      "difficulty": ""
+      "difficulty": "intermediate"
     }
   ]
 }
