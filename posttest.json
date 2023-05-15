@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following heat flow situations pertains to free or natural convection?",
+      "answers": {
+        "a": "Cooling of internal combustion engines",
+        "b": "Flow of water inside the condenser tubes",
+        "c": "Cooling of billets in atmosphere",
+        "d": "Air-conditioning installations and nuclear reactors"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The rate equation used to describe the mechanism of convection is called Newton's law of cooling. So rate of heat flow by convection doesn't depend on",
+      "answers": {
+        "a": "Convective heat transfer coefficient",
+        "b": "urface area through which heat flows",
+        "c": "Time",
+        "d": "Temperature potential difference"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Under normal conditions, the heat transfer due to convection is _______ to the temperature difference between the parts.",
+      "answers": {
+        "a": "Inversely proportional ",
+        "b": "Directly proportional ",
+        "c": "Not related ",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which low comes into play in natural convection?",
+      "answers": {
+        "a": "Pascal's law",
+        "b": "Newton's law of cooling",
+        "c": "Stoke's Law",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "According to Newton's law of cooling, the rate of convective heat transfer is ______ to heat transfer surface area, convective heat transfer coefficient and temperature difference. ",
+      "answers": {
+        "a": "Directly proportional ",
+        "b": "Inversely proportional",
+        "c": "Not related ",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
