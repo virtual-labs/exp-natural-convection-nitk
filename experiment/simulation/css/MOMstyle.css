@@ -294,8 +294,8 @@ div#controls {
 .variable {
   position: relative;
   left: 15px;
-  padding-top: 10px;
   width: 150px;
+  margin-top: -5px;
 }
 
 .varname {
@@ -430,6 +430,88 @@ div#controls {
   width: 50px;
   height: 50px;
   z-index: -5;
+}
+
+.trigger-slider {
+  font-family: "comic sans MS", sans-serif;
+  width: 50px;
+  height: 20px;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 25%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0.2px 0.2px 0 2px rgb(167, 166, 166);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.trigger-btn {
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(115, 124, 250), rgb(2, 5, 51));
+  cursor: pointer;
+  z-index: 11;
+  /* border-right: 1px solid red; */
+}
+
+.trigger-status {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  height: 10px;
+  font-size: 10px;
+  top: -7px;
+  vertical-align: middle;
+  right: 4px;
+  font-weight: bold;
+}
+
+.status-off {
+  right: 4px;
+}
+
+.status-on {
+  left: 4px;
+}
+
+.div-white {
+  background-color: #fff;
+}
+
+.disabled-btn {
+  cursor: not-allowed;
+}
+
+.btn-off {
+  left: 0;
+}
+
+.btn-on {
+  right: 0;
+}
+
+.slider-div {
+  font-family: "comic sans MS", sans-serif;
+  padding-top: -15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}
+
+.slider-value {
+  grid-column: 3/-2;
+  align-self: center;
+  grid-row: 2/-2;
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  border-radius: 2px;
+  justify-self: center;
+  padding: 2px 5px;
+  font-size: 14px;
+  color: #111;
 }
 
 /* Theme edited for Simulation UI */

@@ -61,6 +61,11 @@
     { 		alert();}
     */
 
+    // toggle trigger
+    let triggerBtn;
+    let triggerStatus;
+    let trigger = true;
+
     //change simulation specific css content. e.g. padding on top of variable to adjust appearance in variables window
     function editcss() {
       $('.variable').css('padding-top', '15px');
@@ -82,8 +87,12 @@
 
     // switches state of simulation between temp 0:Playing & 1:Paused
     function simstate() {
-      if (temp == 1) {
+      if(v!=0){
+        triggerBtn.classList.add('disabled-btn')
+        trigger=false;
 
+      
+      if (temp == 1) {
         var imgfilename = document.getElementById('playpausebutton').src;
         imgfilename = imgfilename.substring(imgfilename.lastIndexOf('/') + 1, imgfilename.lastIndexOf('.'));
         if (imgfilename == "blueplaydull") {
@@ -96,6 +105,7 @@
           TimeInterval = setInterval("time1 = time1 + .1; simperiod();", '100');
           TimeInterval1 = setInterval("time2 = time2 + 1; varinit();", '1000');
         }
+      }
       }
     }
     //restart simulation temp1 == 0: can restart experienment and variable initilization
@@ -409,7 +419,11 @@
     function draw_array() {
       ctx.beginPath()
       let y = time1 * 100;
-      console.log(time2);
+      if(Math.round(y) == 500) {
+        trigger = true;
+        triggerBtn.classList.remove('disabled-btn')
+
+      }
 
       ctx.clearRect(199, 0, 15, 400);
       ctx.clearRect(319, 0, 15, 400);
@@ -548,25 +562,40 @@
 
     //check wether a voltage and water flow is selected
     function comment1() {
-      $("#vspinner").spinner({ change: function () { v = $("#vspinner").spinner("value"); } });
+      // $("#vspinner").spinner({ change: function () { v = $("#vspinner").spinner("value"); } });
 
       if (v != 0) {
         time = 0;
         temp = 1;
-        $("#vspinner").spinner({ disabled: true });
-        $("#vslider").slider({ disabled: true });
+        // $("#vspinner").spinner({ disabled: true });
+        // $("#vslider").slider({ disabled: true });
 
         clearInterval(simTimeId);
       }
+    }
+
+    function toggleBtn(){
+      if(trigger) {
+        triggerBtn.classList.toggle('btn-on');
+        triggerStatus.classList.toggle('status-on');
+        triggerStatus.innerText = triggerStatus.classList.contains('status-on')? 'ON':'OFF';
+        v = triggerStatus.classList.contains('status-on')? 10.81 : 0.00;
+        document.querySelector('.slider-value').innerHTML = triggerStatus.classList.contains('status-on')? 10.81 : '0.00';
+        // trigger = !triggerStatus.classList.contains('status-on');
+        if(v == 0) rotstate();
+      }
+      
     }
 
     //Change in Variables with respect to time
     function varinit() {
       varchange();
       //Variable r1 slider and number input types
-      $('#vslider').slider("value", v);
-      $('#vspinner').spinner("value", v);
-
+      // $('#vslider').slider("value", v);
+      // $('#vspinner').spinner("value", v);
+       triggerBtn = document.querySelector('.trigger-btn');
+       triggerStatus = document.querySelector('.trigger-status');
+      triggerBtn.addEventListener('click',toggleBtn);
 
 
       if (time2 > 0) { t1[0] += off[0]; };
@@ -602,13 +631,13 @@
     //change #id and repeat block for new variable. Make sure new <div> with appropriate #id is included in the markup
     function varchange() {
       //Variable f slider and number input types
-      $('#vslider').slider({ max: 10.81, min: 0, step: 10.81 });		// slider initialisation : jQuery widget
-      $('#vspinner').spinner({ max: 10.81, min: 0, step: 10.81 });		// number initialisation : jQuery widget			
+      // $('#vslider').slider({ max: 10.81, min: 0, step: 10.81 });		// slider initialisation : jQuery widget
+      // $('#vspinner').spinner({ max: 10.81, min: 0, step: 10.81 });		// number initialisation : jQuery widget			
       // monitoring change in value and connecting slider and number
       // setting trace point coordinate arrays to empty on change of link length
-      $("#vslider").on("slide", function (e, ui) { $('#vspinner').spinner("value", ui.value); ptx = []; pty = []; j = 0; });
-      $("#vspinner").on("spin", function (e, ui) { $('#vslider').slider("value", ui.value); ptx = []; pty = []; j = 0; });
-      $("#vspinner").on("change", function () { varchange() });
+      // $("#vslider").on("slide", function (e, ui) { $('#vspinner').spinner("value", ui.value); ptx = []; pty = []; j = 0; });
+      // $("#vspinner").on("spin", function (e, ui) { $('#vslider').slider("value", ui.value); ptx = []; pty = []; j = 0; });
+      // $("#vspinner").on("change", function () { varchange() });
 
 
       //$('#heat').spinner({ max: 200, min: 0, step: .001 });		// number initialisation : jQuery widget 
@@ -876,12 +905,19 @@ send an email to adityaraman09@gmail.com for any communication
 
     <!-- System variable input from user through slider and spinner jQuery widgets 
 repeat block with new variable name and new id for widgets-->
-    <div class="variable">
-      <div class="varname">
+    <div class="variable slider-div">
+      <!-- <div class="varname">
         <p title="Link Length">heat</p>
         <input id="vspinner"></input>
+      </div> -->
+      <!-- < id="vslider"></ div> -->
+      <p class="slider-title">Voltage</p>
+      <div class="slider-value">0.00</div>
+      <div class="trigger-slider div-white">
+        <p class="trigger-status status-off">OFF</p>
+        <div class="trigger-btn">
+        </div>
       </div>
-      <div id="vslider"></div>
     </div>
 
     <div class="variable">
