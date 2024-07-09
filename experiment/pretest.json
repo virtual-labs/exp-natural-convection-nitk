@@ -10,10 +10,10 @@
         "d": "Heat exchanger"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "It is convection i.e. conduction plus some velocity. It is the process of energy transport affected by the mixing of a fluid medium.",
-        "d": "beginner"
+        "a": "The right answer is (c). Radiation is the mode of heat transfer using electromagnetic waves.",
+        "b": "The right answer is (c). Conduction is a mode of heat transfer in solid which the heat flows in solid from hotter region to colder region.",
+        "c": "Correct, the right answer is (c). It is convection i.e. conduction plus some velocity. It is the process of energy transport affected by the mixing of a fluid medium.",
+        "d": "The right answer is (c). Heat exchanger is a device used to remove or apply the heat from one material to another material. Example, evaporator and condensator."
       },
       "correctAnswer": "c",
       "difficulty": ""
@@ -27,10 +27,10 @@
         "d": "Convection to the air"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": "Convection is a process in which thermal energy is transferred between solid and fluid flowing through it."
+        "a": "The right answer is (d). Convection is a process in which thermal energy is transferred between solid and fluid flowing through it and radiation is the mode of heat transfer using electromagnetic waves. Since a finned tube hot water radiator with a fan blowing air over, conduction happens but radiation mode doesn't happen.",
+        "b": "The right answer is (d). Radiation is the mode of heat transfer using electromagnetic waves. Since a finned tube hot water radiator with a fan blowing air over, radiation mode doesn't happen." ,
+        "c": "The right answer is (d). Conduction is a mode of heat transfer in solid which the heat flows in solid from hotter region to colder region. Since a finned tube hot water radiator with a fan blowing air over, conduction won't happen.",
+        "d": "Correct, the right answer is (d). Convection is a process in which thermal energy is transferred between solid and fluid flowing through it."
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -44,10 +44,10 @@
         "d": "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (d). Convection heat transfer coefficient not only depends upon geometry of surface but also characteristics of fluid and thermal properties of fluid.",
+        "b": "The right answer is (d). Convection heat transfer coefficient not only depends upon characteristics of fluid but also geometry of surface and thermal properties of fluid.",
+        "c": "The right answer is (d). Convection heat transfer coefficient not only depends upon thermal properties of fluid but also geometry of surface and characteristics of fluid.",
+        "d": "Correct, the right answer is (d). Convection heat transfer coefficient depends upon geometry of surface, characteristics of fluid and thermal properties of fluid."
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -61,10 +61,10 @@
         "d": "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (d). Convection is the process of heat transfer in fluids by the actual motion of matter. It happens in liquids and gasses and they can be natural or forced.",
+        "b": "The right answer is (d). Convection is the process of heat transfer in fluids by the actual motion of matter. It happens in liquids and gasses and they can be natural or forced.",
+        "c": "The right answer is (d). Convection is the process of heat transfer in fluids by the actual motion of matter. It happens in liquids and gasses and they can be natural or forced.",
+        "d": "Correct, the right answer is (d). Convection is the process of heat transfer in fluids by the actual motion of matter. It happens in liquids and gasses and they can be natural or forced."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -76,8 +76,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct, the right answer is (a). Natural convection happens when the fluid isn't be forced by an external. Forced convection happens when the fluid is kept in motion by an external means, such as a turbine or a fan.",
+        "b": "The right answer is (a). Natural convection happens when the fluid isn't be forced by an external. Forced convection happens when the fluid is kept in motion by an external means, such as a turbine or a fan."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
