@@ -1,13 +1,25 @@
-#### These procedure steps will be followed on the simulator
+### Procedure
 
-1. The following window appears after clicking on the simulation link.<br>
-   ![alt text](images/1.png)<br>
+<div style="text-align:left">
+  Click on the Objective icon <img src="images/objecticon.png" alt="Alt text" style="height:80px; width:80px;">  to view the Objective of the simulation. 
 
-2. Give heat input to the heater by using the slider and adjust the voltage to the required value. Wait for 5 seconds for it to reach steady state. Note down the values of temperatures.<br>
-   ![alt text](images/2.png)<br>
+   ![Alt text](images/Simscreen1.png)
+   
+   Click on the Description icon <img src="images/desicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the description of the simulation. 
 
-3. Observe the graph, check your calculations with the results..<br>
-   ![alt text](images/3.png)<br>
+   ![Alt text](images/descriptionscreen.png)
 
-4. check your calculations with the results. And click on back if you want to move to previous slide.<br>
-   ![alt text](images/4.png)<br>
+  Click on the Experiment icon <img src="images/expicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the experimental setup. 
+
+  ![Alt text](images/expscreen.png)
+
+   Select the voltage value and click on the On button <img src="images/onButton.png" alt="Alt text" style="height:80px; width:80px;"> to perform the experiment, click on the Reset button <img src="images/resetButton.png" alt="Alt text" style="height:80px; width:80px;"> to reset the experiment.
+
+
+   After performing the experiment, click on the Solve icon <img src="images/solveicon.png" alt="Alt text" style="height:80px; width:80px;"> 
+
+   ![Alt text](images/solvescreen.png)
+
+
+   Calculate the result and click Check button <img src="images/checkButton.png" alt="Alt text" style="height:80px; width:80px;"> to evaluate the result. 
+</div>

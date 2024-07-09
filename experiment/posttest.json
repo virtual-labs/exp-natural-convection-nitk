@@ -10,10 +10,10 @@
         "d": "Air-conditioning installations and nuclear reactors"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (c). Cooling of internal combustion engines is cooled by using fans. It's a forced convection.",
+        "b": "The right answer is (c). The water is in motion inside the condenser tubes. It's a forced convection.",
+        "c": "Correct, the right answer is (c). Cooling of billets in atmosphere is a slow process and doesn't need any external force for the fluid. So, it's a natural convection.",
+        "d": "The right answer is (c). The fluids in Air-conditioning installations and nuclear reactors are always in motion. So, it's a forced convection." 
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -22,15 +22,15 @@
       "question": "The rate equation used to describe the mechanism of convection is called Newton's law of cooling. So rate of heat flow by convection doesn't depend on",
       "answers": {
         "a": "Convective heat transfer coefficient",
-        "b": "urface area through which heat flows",
+        "b": "Surface area through which heat flows",
         "c": "Time",
         "d": "Temperature potential difference"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (c). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1).",
+        "b": "The right answer is (c). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1).",
+        "c": "Correct, the right answer is (c). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1). It does not depend on time.",
+        "d": "The right answer is (c). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1)."
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -44,16 +44,16 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (b). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1). Therefore, it is dirctly proportional to temperature difference between the parts.",
+        "b": "Correct, the right answer is (b). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1). Therefore, it is dirctly proportional to temperature difference between the parts.",
+        "c": "The right answer is (b). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1). Therefore, it is dirctly proportional to temperature difference between the parts.",
+        "d": "The right answer is (b). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1). Therefore, it is dirctly proportional to temperature difference between the parts."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "Which low comes into play in natural convection?",
+      "question": "Which law comes into play in natural convection?",
       "answers": {
         "a": "Pascal's law",
         "b": "Newton's law of cooling",
@@ -61,10 +61,10 @@
         "d": "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (b). According to Pascal's Law, The external static pressure applied on a confined liquid is distributed or transmitted evenly throughout the liquid in all directions",
+        "b": "Correct, the right answer is (d). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1). Q = h * A * (T2-T1).",
+        "c": "The right answer is (b). Stokes' Law is used to calculate the frictional force, also known as drag force, exerted on spherical objects with very small Reynolds numbers in a viscous fluid.",
+        "d": "The right answer is (b). According to Newton's law of cooling, rate of heat flow by convection is defined by multiplying Convective heat transfer coefficient(h), Surface area through which heat flows(A) and Temperature potential difference (T2 - T1)."
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
@@ -78,10 +78,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). According to Newton's law of cooling, the rate of convective heat transfer is Directly proportional to heat transfer surface area, convective heat transfer coefficient and temperature difference. Q = h * A * (T2-T1).",
+        "b": "The right answer is (a). According to Newton's law of cooling, the rate of convective heat transfer is Directly proportional to heat transfer surface area, convective heat transfer coefficient and temperature difference. Q = h * A * (T2-T1).",
+        "c": "The right answer is (a). According to Newton's law of cooling, the rate of convective heat transfer is Directly proportional to heat transfer surface area, convective heat transfer coefficient and temperature difference. Q = h * A * (T2-T1).",
+        "d": "The right answer is (a). According to Newton's law of cooling, the rate of convective heat transfer is Directly proportional to heat transfer surface area, convective heat transfer coefficient and temperature difference. Q = h * A * (T2-T1)."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
