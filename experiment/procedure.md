@@ -5,9 +5,9 @@
 
    ![Alt text](images/Simscreen1.png)
    
-   Click on the Description icon <img src="images/desicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the description of the simulation. 
+  Click on the Description icon <img src="images/desicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the description of the simulation. 
 
-   ![Alt text](images/descriptionscreen.png)
+  ![Alt text](images/descriptionscreen.png)
 
   Click on the Experiment icon <img src="images/expicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the experimental setup. 
 

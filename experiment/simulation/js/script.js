@@ -78,7 +78,7 @@ function displayDiv(ele) {
   }
   if (ele.classList.contains("tool-explore")) {
     document.querySelector(".explore").classList.remove("hide");
-    document.querySelector(".extra-info").classList.remove("hide");
+    document.querySelector(".extra-info").classList.add("hide");
     if (temp2 !== 1) {
       drawModel();
       startsim();
@@ -87,6 +87,7 @@ function displayDiv(ele) {
   }
   if (ele.classList.contains("tool-practice")) {
     document.querySelector(".practice").classList.remove("hide");
+    document.querySelector(".extra-info").classList.remove("hide");
     if (temp2 == 1) {
       temp1 = 1;
       validation();
@@ -96,6 +97,7 @@ function displayDiv(ele) {
         "Perform the experiment to solve the questions";
       document.querySelector(".graph-div").classList.add("hide");
       document.querySelector(".questions").classList.add("hide");
+      document.querySelector(".extra-info").classList.add("hide");
     }
   }
 }
