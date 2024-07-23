@@ -107,6 +107,7 @@ h1 {
   padding: 1.2rem 1.6rem;
   border-radius: 0.9rem;
   left: 0;
+  cursor: pointer;
 }
 
 .logo-div {
@@ -287,8 +288,8 @@ h1 {
 .explore {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 5rem;
+  gap: 0rem;
+  padding: 1rem;
 }
 
 .objective {
@@ -310,13 +311,19 @@ h1 {
 .objective__main {
   border: 2px solid var(--clr-title-background);
   font-size: 1.8rem;
+  margin: 5rem;
   padding: 2rem;
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
 }
+.newimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .model {
-  width: 100%;
+  width: 63%;
 }
 
 .model-detail {
@@ -417,6 +424,7 @@ h1 {
   align-self: center;
 }
 .btn-check {
+  padding: 0.5rem;
   grid-column: 1/-1;
   align-self: center;
 }
@@ -491,25 +499,27 @@ h1 {
   font-weight: 700;
 }
 .btn {
-  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
-    var(--clr-side-background3)
+    var(--clr-side-background3),
+    var(--clr-side-background2)
   );
   color: var(--clr-text-clr);
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
+  border: 0.3rem solid transparent;
   justify-self: center;
 }
 .btn:hover {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
-    var(--clr-side-background3)
+    var(--clr-side-background3),
+    var(--clr-side-background2)
   );
   background-clip: text;
   color: transparent;
@@ -574,7 +584,9 @@ h1 {
   font-weight: 700;
   justify-self: end;
 }
-
+.canvasjs-chart-credit {
+  display: none;
+}
 .graph-div {
   grid-column: 1/-1;
   align-self: center;
@@ -603,7 +615,7 @@ canvas {
 }
 .canvas {
   display: block;
-  width: 100%;
+  width: 82%;
   height: 100%;
 }
 

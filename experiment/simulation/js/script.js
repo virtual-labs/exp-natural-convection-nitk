@@ -21,6 +21,7 @@ const btnCheck2 = document.querySelector(".btn-check2");
 const btnCheck3 = document.querySelector(".btn-check3");
 const btnCheck4 = document.querySelector(".btn-check4");
 const btnCheck5 = document.querySelector(".btn-check5");
+const taskTitle = document.querySelector(".task-title");
 
 btnStart.addEventListener("click", initiateProcess);
 btnReset.addEventListener("click", resetAll);
@@ -72,13 +73,16 @@ function displayDiv(ele) {
   });
   if (ele.classList.contains("tool-objective")) {
     document.querySelector(".objective").classList.remove("hide");
+    taskTitle.textContent = "Objective";
   }
   if (ele.classList.contains("tool-description")) {
     document.querySelector(".description").classList.remove("hide");
+    taskTitle.textContent = "Description";
   }
   if (ele.classList.contains("tool-explore")) {
     document.querySelector(".explore").classList.remove("hide");
     document.querySelector(".extra-info").classList.add("hide");
+    taskTitle.textContent = "Experiment";
     if (temp2 !== 1) {
       drawModel();
       startsim();
@@ -87,17 +91,18 @@ function displayDiv(ele) {
   }
   if (ele.classList.contains("tool-practice")) {
     document.querySelector(".practice").classList.remove("hide");
-    document.querySelector(".extra-info").classList.remove("hide");
+    taskTitle.textContent = "Solve";
     if (temp2 == 1) {
       temp1 = 1;
       validation();
-      document.querySelector("#info").innerHTML = "Temperature distribution";
+      document.querySelector("#info").innerHTML = "Temperature Gradient";
+      document.querySelector(".extra-info").classList.remove("hide");
     } else {
       document.querySelector("#info").innerHTML =
         "Perform the experiment to solve the questions";
+      document.querySelector(".extra-info").classList.add("hide");
       document.querySelector(".graph-div").classList.add("hide");
       document.querySelector(".questions").classList.add("hide");
-      document.querySelector(".extra-info").classList.add("hide");
     }
   }
 }
@@ -132,7 +137,7 @@ function simperiod() {
 
     if (steadyState > 0) {
       commentElement.innerHTML = `Wait for ${steadyState} seconds for steady state`;
-      btnReset.setAttribute("disabled", true);
+      // btnReset.setAttribute("disabled", true);
     } else {
       temp2 = 0;
       commentElement.innerHTML = `The steady state is achieved`;
@@ -384,6 +389,7 @@ function startsim() {
 function initiateProcess() {
   if (currentVoltage === 0) return;
   btnStart.setAttribute("disabled", true);
+  btnReset.setAttribute("disabled", true);
   voltageButtons.forEach((voltage) => voltage.setAttribute("disabled", true));
   simstate();
 }
@@ -411,7 +417,7 @@ function validation() {
   }
   document.querySelector(".graph-div").classList.remove("hide");
   document.querySelector(".questions").classList.remove("hide");
-  drawgraph("graph", datapoints, "Length from bottom in mm", "temperatures in deg.");
+  drawgraph("graph", datapoints, "Length from bottom (mm)", "Temperature(⁰C)");
   if (currentVoltage == 10) {
     tempslope = slope[0];
     tempk = k[0];
@@ -527,6 +533,7 @@ function validateAnswer5() {
 
 function resetAll() {
   btnStart.setAttribute("disabled", true);
+  btnReset.setAttribute("disabled", true);
   voltageButtons.forEach((voltage) => {
     voltage.removeAttribute("disabled");
     voltage.checked = false;
