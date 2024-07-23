@@ -80,7 +80,7 @@
             <span>Experiment</span>
           </li>
           <li class="tool-list tool-practice" onclick="displayDiv(this)">
-            <a class="tool-link" title="Variables"
+            <a class="tool-link" title="Solve"
               ><img src="./images/solution.png" alt="solution" class="icons"
             /></a>
             <span>Solve</span>
@@ -90,19 +90,21 @@
       <div class="main">
         <div class="main-section">
           <div id="simulation" class="main__task-div">
-            <h3 class="task-title">Simulation</h3>
+            <h3 class="task-title">Objective</h3>
 
             <div class="canvas__div">
               <div class="task-screen objective">
-                <h3 class="objective__title">Objective</h3>
+                <!-- <h3 class="objective__title">Objective</h3> -->
                 <p class="objective__main">
                   To calculate heat transfer coefficient and heat transfer rate from vertical cylinder in natural convection.
                 </p>
               </div>
               <div class="task-screen description hide">
-                <h3 class="description__title">Description</h3>
+                <!-- <h3 class="description__title">Description</h3> -->
                 <div class="description-conatiner">
-                  <img src="./images/newmodel.png" alt="apparatus" class="model" />
+                  <div class="newimg">
+                  <img src="./images/newmodel.png" alt="apparatus" class="model" /></div>
+
                   <div class="model-detail">
                     <p>Diameter, d = 44mm</p>
                     <p>Length t = 500mm</p>
@@ -116,7 +118,7 @@
                   <div class="voltage-set">
                     <p>Voltage</p>
                     <button class="btn btn-start" disabled>On</button>
-                    <button class="btn btn-reset" >Reset</button>
+                    <button class="btn btn-reset"  disabled >Reset</button>
                   </div>
                   <div class="input-group">
                     <!-- <input
