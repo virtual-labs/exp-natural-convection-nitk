@@ -1,6 +1,6 @@
 let triggerBtn;
-    let triggerStatus;
-    let trigger = true;
+let triggerStatus;
+let trigger = true;
 
 // var canvas = document.querySelector("#simscreen");
 // var ctx = canvas.getContext("2d");
@@ -15,7 +15,7 @@ const temperature4 = document.querySelector("#temp4");
 const temperature5 = document.querySelector("#temp5");
 const temperature6 = document.querySelector("#temp6");
 const temperature7 = document.querySelector("#temp7");
-const temperature8 = document.querySelector("#temp8");
+// const temperature8 = document.querySelector("#temp8");
 const btnCheck1 = document.querySelector(".btn-check1");
 const btnCheck2 = document.querySelector(".btn-check2");
 const btnCheck3 = document.querySelector(".btn-check3");
@@ -38,7 +38,6 @@ let v = 0;
 // var canvas;
 // var ctx;
 
-
 //timing section
 let simTimeId = setInterval("", "1000");
 let TimeInterval = setInterval("", "1000");
@@ -48,7 +47,8 @@ let time1 = 0;
 let time2 = 0;
 
 //point tracing section and initial(atmospheric section)
-let t1 = [26, 26, 27, 27.5, 26.5, 27, 28, 36];
+// let t1 = [26, 26, 27, 27.5, 26.5, 27, 28, 36];
+let t1 = [26, 26, 26, 26, 26, 26, 26, 26];
 // let th = [55, 55, 55, 55, 55];
 let off = [0, 0, 0, 0, 0, 0, 0, 0];
 let slope = [-282.86, -315.71, -354.29];
@@ -64,7 +64,6 @@ let temp1 = 2;
 let temp2 = 0;
 let tempslope = 0;
 let tempk = 0;
-
 
 function displayDiv(ele) {
   const taskScreen = document.querySelectorAll(".task-screen");
@@ -117,8 +116,7 @@ function offset() {
     off[5] = 13;
     off[6] = 13.2;
     off[7] = 0;
-  } 
-  
+  }
 }
 
 function simperiod() {
@@ -147,16 +145,30 @@ function simperiod() {
 }
 //Change in Variables with respect to time
 function varinit() {
-  $('#vfslider').slider("value", v);
+  $("#vfslider").slider("value", v);
   // $("#vfspinner").spinner("value", v);
   console.log(currentVoltage, temperature1);
-  if (time2 > 0) { t1[0] += off[0]; };
-  if (time2 > 0) { t1[1] += off[1]; };
-  if (time2 > 0) { t1[2] += off[2]; };
-  if (time2 > 0) { t1[3] += off[3]; };
-  if (time2 > 0) { t1[4] += off[4]; };
-  if (time2 > 0) { t1[5] += off[5]; };
-  if (time2 > 0) { t1[6] += off[6]; };
+  if (time2 > 0) {
+    t1[0] += off[0];
+  }
+  if (time2 > 0) {
+    t1[1] += off[1];
+  }
+  if (time2 > 0) {
+    t1[2] += off[2];
+  }
+  if (time2 > 0) {
+    t1[3] += off[3];
+  }
+  if (time2 > 0) {
+    t1[4] += off[4];
+  }
+  if (time2 > 0) {
+    t1[5] += off[5];
+  }
+  if (time2 > 0) {
+    t1[6] += off[6];
+  }
   // if (time2 > 0) { t1[7] += off[7]; };
 
   // vfspinner.textContent = vf;
@@ -167,7 +179,7 @@ function varinit() {
   temperature5.textContent = t1[4].toFixed(2);
   temperature6.textContent = t1[5].toFixed(2);
   temperature7.textContent = t1[6].toFixed(2);
-  temperature8.textContent = t1[7].toFixed(2);
+  // temperature8.textContent = t1[7].toFixed(2);
 }
 
 // //water temperature changes
@@ -192,30 +204,28 @@ function drawGradient() {
   //heater simulation
   var h = 400 * time1;
   //create gradient
-  var grd1 = ctx.createLinearGradient(0, 0, h, 0)
+  var grd1 = ctx.createLinearGradient(0, 0, h, 0);
   grd1.addColorStop(0, "red");
   grd1.addColorStop(1, "white");
   // Fill with gradient
   ctx.fillStyle = grd1;
   ctx.fillRect(380.5, 98, 3, 375);
 
-
   //outer parallel tube simulation
   var t1 = 110 * time1;
   //create gradient
-  var grd2 = ctx.createLinearGradient(0, 0, t1, 0)
+  var grd2 = ctx.createLinearGradient(0, 0, t1, 0);
   grd2.addColorStop(0, "#FF0000");
   grd2.addColorStop(1, "white");
   // Fill with gradient
   ctx.fillStyle = grd2;
   ctx.fillRect(387, 98, 39.5, 375);
 
-
   var t6 = 50 * time1;
   var y6 = 500 - t6;
 
   //create gradient
-  var grd3 = ctx.createLinearGradient(500, 0, y6, 0)
+  var grd3 = ctx.createLinearGradient(500, 0, y6, 0);
   grd3.addColorStop(0, "#FF0000");
   grd3.addColorStop(1, "white");
   //Fill with gradient
@@ -231,41 +241,39 @@ function drawGradient() {
   // ctx.fillRect(259.5, 60, -39.5, 375)
 }
 
-
-
 function draw_array() {
   ctx.beginPath();
   let y = time1 * 100;
-  
-  ctx.fillStyle = 'white';
+
+  ctx.fillStyle = "white";
   ctx.fillRect(289, 0, 15, 600);
   ctx.fillRect(469, 0, 15, 600);
 
   // Update arrow positions for the first red rectangle at x = 289
-  ctx.moveTo(295, (400 - time1 * 200));
-  ctx.lineTo(295, (360 - time1 * 200));
-  ctx.lineTo(290, (370 - time1 * 200));
-  ctx.moveTo(295, (360 - time1 * 200));
-  ctx.lineTo(300, (370 - time1 * 200));
+  ctx.moveTo(295, 400 - time1 * 200);
+  ctx.lineTo(295, 360 - time1 * 200);
+  ctx.lineTo(290, 370 - time1 * 200);
+  ctx.moveTo(295, 360 - time1 * 200);
+  ctx.lineTo(300, 370 - time1 * 200);
 
-  ctx.moveTo(295, (400 - (time1 - 2) * 200));
-  ctx.lineTo(295, (360 - (time1 - 2) * 200));
-  ctx.lineTo(290, (370 - (time1 - 2) * 200));
-  ctx.moveTo(295, (360 - (time1 - 2) * 200));
-  ctx.lineTo(300, (370 - (time1 - 2) * 200));
+  ctx.moveTo(295, 400 - (time1 - 2) * 200);
+  ctx.lineTo(295, 360 - (time1 - 2) * 200);
+  ctx.lineTo(290, 370 - (time1 - 2) * 200);
+  ctx.moveTo(295, 360 - (time1 - 2) * 200);
+  ctx.lineTo(300, 370 - (time1 - 2) * 200);
 
   // Update arrow positions for the second red rectangle at x = 469
-  ctx.moveTo(475, (400 - time1 * 200));
-  ctx.lineTo(475, (360 - time1 * 200));
-  ctx.lineTo(470, (370 - time1 * 200));
-  ctx.moveTo(475, (360 - time1 * 200));
-  ctx.lineTo(480, (370 - time1 * 200));
+  ctx.moveTo(475, 400 - time1 * 200);
+  ctx.lineTo(475, 360 - time1 * 200);
+  ctx.lineTo(470, 370 - time1 * 200);
+  ctx.moveTo(475, 360 - time1 * 200);
+  ctx.lineTo(480, 370 - time1 * 200);
 
-  ctx.moveTo(475, (400 - (time1 - 2) * 200));
-  ctx.lineTo(475, (360 - (time1 - 2) * 200));
-  ctx.lineTo(470, (370 - (time1 - 2) * 200));
-  ctx.moveTo(475, (360 - (time1 - 2) * 200));
-  ctx.lineTo(480, (370 - (time1 - 2) * 200));
+  ctx.moveTo(475, 400 - (time1 - 2) * 200);
+  ctx.lineTo(475, 360 - (time1 - 2) * 200);
+  ctx.lineTo(470, 370 - (time1 - 2) * 200);
+  ctx.moveTo(475, 360 - (time1 - 2) * 200);
+  ctx.lineTo(480, 370 - (time1 - 2) * 200);
 
   ctx.stroke();
 }
@@ -275,7 +283,7 @@ function drawModel() {
   // Get the canvas element and context
   canvas = document.getElementById("simscreen");
   ctx = canvas.getContext("2d");
-  
+
   // Clear the complete canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -302,23 +310,35 @@ function drawModel() {
   ctx.scale(scale, scale);
 
   // Set the line width for thicker lines
-  ctx.lineWidth = 3 / scale;  // Adjust line width according to scale
+  ctx.lineWidth = 3 / scale; // Adjust line width according to scale
 
   // Text elements
   ctx.font = `${22 / scale}px  Nunito`;
   ctx.fillStyle = "black"; // Ensure text color is set
 
+  // ctx.moveTo(295, 282.5);
+  ctx.beginPath();
+  ctx.arc(295, 282.5, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 250, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 217.5, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 185, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 152.5, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 120, 3.5, 2 * Math.PI, 0);
+  ctx.arc(295, 87.5, 3.5, 2 * Math.PI, 0);
+  ctx.fill();
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.moveTo(230, 370);
   // Draw text elements
   ctx.fillText("Air flow", 230, 370);
   ctx.fillText("Wooden container", 45, 70);
   ctx.fillText("stainless", 230, 35);
   ctx.fillText("steel tube", 230, 55);
-
+  ctx.strokeStyle = "black";
   ctx.fillText("1", 300, 287.5);
   ctx.fillText("2", 300, 255);
   ctx.fillText("3", 300, 222.5);
   ctx.fillText("4", 300, 190);
-  ctx.fillText("8", 200, 190);
   ctx.fillText("5", 300, 157.5);
   ctx.fillText("6", 300, 125);
   ctx.fillText("7", 300, 92.5);
@@ -334,7 +354,7 @@ function drawModel() {
   ctx.rect(230, 60, 65, 260);
   ctx.rect(260, 60, 5, 260);
   ctx.stroke();
-  ctx.beginPath()
+  ctx.beginPath();
   ctx.moveTo(50, 40);
   ctx.lineTo(180, 40);
   //ctx.moveTo(105, 60);
@@ -347,8 +367,7 @@ function drawModel() {
   ctx.lineTo(350, 340);
   ctx.lineTo(480, 340);
 
-  //array 
-
+  //array
 
   ctx.stroke();
   // Draw gradient
@@ -366,7 +385,7 @@ function comment1() {
     //printcomment("start simulation", 0);
     // if (currentVoltage == 10.81) {
     //   // vf = 26;
-    // } 
+    // }
     // else if (currentVoltage == 20) {
     //   vf = 54;
     // } else if (currentVoltage == 30) {
@@ -401,8 +420,8 @@ function simstate() {
     temp = 0;
     temp1 = 1;
     offset();
-    TimeInterval = setInterval("time1 = time1 + .1; simperiod();", '100');
-    TimeInterval1 = setInterval("time2 = time2 + 1; varinit();", '1000');
+    TimeInterval = setInterval("time1 = time1 + .1; simperiod();", "100");
+    TimeInterval1 = setInterval("time2 = time2 + 1; varinit();", "1000");
   }
 }
 
@@ -433,7 +452,6 @@ function validation() {
   btnCheck3.addEventListener("click", () => validateAnswer3());
   btnCheck4.addEventListener("click", () => validateAnswer4());
   btnCheck5.addEventListener("click", () => validateAnswer5());
-  
 }
 
 function validateAnswer1() {
@@ -443,7 +461,9 @@ function validateAnswer1() {
   let userEnteredValue = Number(
     document.querySelector(".question-input1").value
   );
-  let answer = userEnteredValue === beta ? true : false;
+  // let answer = userEnteredValue === beta ? true : false;
+  let answer = validateNearToAnswer(beta, userEnteredValue);
+
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -462,7 +482,9 @@ function validateAnswer2() {
   let userEnteredValue = Number(
     document.querySelector(".question-input2").value
   );
-  let answer = userEnteredValue === gr ? true : false;
+  // let answer = userEnteredValue === gr ? true : false;
+  let answer = validateNearToAnswer(gr, userEnteredValue);
+
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -481,7 +503,9 @@ function validateAnswer3() {
   let userEnteredValue = Number(
     document.querySelector(".question-input3").value
   );
-  let answer = userEnteredValue === nu ? true : false;
+  // let answer = userEnteredValue === nu ? true : false;
+  let answer = validateNearToAnswer(nu, userEnteredValue);
+
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -500,7 +524,9 @@ function validateAnswer4() {
   let userEnteredValue = Number(
     document.querySelector(".question-input4").value
   );
-  let answer = userEnteredValue === h ? true : false;
+  // let answer = userEnteredValue === h ? true : false;
+  let answer = validateNearToAnswer(h, userEnteredValue);
+
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -519,7 +545,9 @@ function validateAnswer5() {
   let userEnteredValue = Number(
     document.querySelector(".question-input5").value
   );
-  let answer = userEnteredValue === qc ? true : false;
+  // let answer = userEnteredValue === qc ? true : false;
+  let answer = validateNearToAnswer(qc, userEnteredValue);
+
   if (!userEnteredValue) return;
   if (!answer) {
     correctAnswer.classList.remove("hide");
@@ -528,6 +556,18 @@ function validateAnswer5() {
   } else if (answer) {
     correctAnswer.classList.add("hide");
     unit.innerHTML += " <span class='correct'>&#x2713;</span>";
+  }
+}
+
+function validateNearToAnswer(exactAnswer, userAnswer) {
+  const tolerance = 0.01; // Define the tolerance level
+  const lowerBound = exactAnswer - tolerance;
+  const upperBound = exactAnswer + tolerance;
+
+  if (userAnswer < lowerBound || userAnswer > upperBound) {
+    return false; // Answer is outside the tolerance range
+  } else {
+    return true; // Answer is within the tolerance range
   }
 }
 
@@ -541,7 +581,8 @@ function resetAll() {
   document.querySelector(".comment").innerHTML = "";
   temp2 = 0;
   temp1 = 2;
-  t1 = [26, 26, 27, 27.5, 26.5, 27, 28, 36];
+  // t1 = [26, 26, 27, 27.5, 26.5, 27, 28, 36];
+  t1 = [26, 26, 26, 26, 26, 26, 26, 26];
   off = [0, 0, 0, 0, 0, 0, 0, 0];
   th = [45, 45, 45, 45, 45];
   currentVoltage = 0;
