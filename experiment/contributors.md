@@ -8,21 +8,15 @@
 
 ### Lab Developers:
 
-| SNo. |      Name       | Institute |
-| :--: | :-------------: | :-------: |
-|  1   | Prasad Mandave  |   NITK    |
-|  2   | Ahemad Daniyal  |   NITK    |
-|  3   |     Akshaya     |   NITK    |
-|  4   | Anusha B Salian |   NITK    |
-|  5   |     Shwetha     |   NITK    |
-
-### Content Developers:
-
 | SNo. |         Name          | Institute |
 | :--: | :-------------------: | :-------: |
-|  1   |    Ranjan Tunga S     |   NITK    |
-|  2   |    Rohit Kushwaha     |   NITK    |
-|  3   |    Nagaraj Kamath     |   NITK    |
-|  4   |      Vishwas A S      |   NITK    |
-|  5   | Steevan Loyd Sequeira |   NITK    |
-|  6   |    Ganesh Baskaran    |   NITK    |
+|  1   |    Prasad Mandave     |   NITK    |
+|  2   |    Ahemad Daniyal     |   NITK    |
+|  3   |    Ranjan Tunga S     |   NITK    |
+|  4   |    Rohit Kushwaha     |   NITK    |
+|  5   |    Nagaraj Kamath     |   NITK    |
+|  6   |      Vishwas A S      |   NITK    |
+|  7   | Steevan Loyd Sequeira |   NITK    |
+|  8   |    Ganesh Baskaran    |   NITK    |
+|  9   |        Akshaya        |   NITK    |
+|  10  |    Anusha B Salian    |   NITK    |
