@@ -316,7 +316,7 @@ h1 {
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
 }
-.newimg{
+.newimg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,6 +422,7 @@ h1 {
 }
 .question-unit {
   align-self: center;
+  justify-self: start;
 }
 .btn-check {
   padding: 0.5rem;

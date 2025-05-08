@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/query.css" />
     <!-- <script defer src="https://code.jquery.com/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <script
       defer
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -210,26 +211,23 @@
                     <!-- <p class="warning"> Please enter a value rounded upto two decimal points</p> -->
                     <div class="question-one">
                       <div class="question-title">Volumetric coefficient</div>
-                      <div class="question-formula">&beta; = <span style="font-size: large;" class="frac"><sup>1</sup><span>&frasl;</span><sub>Tm(Mean temperature)</sub>
-                      </span> </div>
-                      <p class="question-label"><label for="bvalue"><i> &beta; = </i></label> </p>
+                      <div class="question-formula">$$\beta = \frac{1}{T_m(Mean Temperature)}$$</div>
+                      <p class="question-label"><label for="bvalue">$$ \beta =$$</label> </p>
                       <input class="question-input question-input1" type="number"/>
-                      <p class="question-unit question-unit1"> 1/K</p>
+                      <p class="question-unit question-unit1"> $$1/K$$</p>
                       <p class="correct-answer correct-answer1 hide"></p>
                       <button class="btn btn-check btn-check1">Check</button>
                     </div>
 
                     <div class="question-two">
                       <div class="question-title">Grashof number</div>
-                      <div class="question-formula"><label for="gvalue"><i> Gr = </i></label>
-                        <span style="font-size: large;" class="frac"><sup>L<sup>3</sup>.&beta;.g.(Ts - Ta)
-                        </sup><span>&frasl;</span>
-                        <sub> &gamma; <sup>2</sup> </sub></span>  <p>&gamma; = 1.846*10 <sup>-5</sup>m<sup>2</sup>/s</p>
-                        <p>Ts: Surface temperature</p>
-                        <p>Ts:Ambient (or bulk fluid) temperature</p>
-                        <p>g: Acceleration due to gravity</p>
+                      <div class="question-formula" ><label for="gvalue">$$Gr = \frac{L^3.\beta.g(T_s - T_a)}{\gamma^2}$$</label>
+                        <p>$$\gamma = 1.846*10^{-5}m^2/s$$</p>
+                        <p>$$T_s: Surface \space temperature $$</p>
+                        <p>$$T_a:Ambient \space(or\space bulk\space fluid) \space temperature $$</p>
+                        <p>$$g: Acceleration\space due\space to\space gravity$$</p>
                       </div>
-                      <p class="question-label">Gr = </p>
+                      <p class="question-label">$$Gr =$$ </p>
                       <input class="question-input question-input2" type="number"/>
                       <p class="question-unit question-unit2"></p>
                       <p class="correct-answer correct-answer2 hide"></p>
@@ -239,12 +237,12 @@
                     <div class="question-three">
                       <div class="question-title">Nusselt Number,</div>
                       <div class="question-formula" ><label for="gvalue"><i></i></label><span style="font-size: large;" class="frac">
-                        <p style="text-align: left;">Nu = 0.53(Ra) <sup>1/4</sup> if Ra &lt; 10 <sup>5</sup></p>
-                         <p style="text-align: left;">0.56(Ra) <sup>1/4</sup> if 10 <sup>5</sup> &lt; Ra &lt; 10 <sup>8</sup></p>
-                          <p style="text-align: left;">0.13(Ra) <sup>1/3</sup> if 10 <sup>8</sup> &lt; Ra &lt; 10 <sup>12</sup></p>
+                        <p style="text-align: left;">$$Nu = 0.53(R_a)^{1/4}, if \space  R_a \lt 10^5$$</p>
+                         <p style="text-align: left;">$$0.56(R_a)^{1/4}, if \space  10^5 \lt R_a \lt 10^8$$</p>
+                          <p style="text-align: left;">$$0.13(R_a)^{1/3}, if \space  10^8 \lt R_a \lt 10^{12}$$</p>
                         </p>
-                        <p> Ra = Gr.Pr .... Pr = 0.697</p></span> </div>
-                      <p class="question-label">Nu = </p>
+                        <p> $$Ra = Gr.Pr .... Pr = 0.697$$</p></div>
+                      <p class="question-label">$$Nu =$$ </p>
                       <input class="question-input question-input3" type="number"/>
                       <p class="question-unit question-unit3"></p>
                       <p class="correct-answer correct-answer3 hide"></p>
@@ -253,16 +251,14 @@
 
                     
                     <div class="question-four">
-                      <div class="question-title">heat transfer coefficient,</div>
-                      <div class="question-formula"><label for="gvalue"><i></i></label><span style="font-size: large;" class="frac">
-                        <p> h =
-                          <span style="font-size: large;" class="frac"><sup>Nu.k </sup><span>&frasl;</span>
-                            <sub> L </sub></span>
+                      <div class="question-title">Heat transfer coefficient,</div>
+                      <div class="question-formula"><label for="gvalue"></label>
+                        <p> $$h = \frac{Nu.k}{L}$$
                         </p>
-                        <p>k = 0.02861</p></span> </div>
-                      <p class="question-label">h = </p>
+                        <p>$$k = 0.02861$$</p></div>
+                      <p class="question-label">$$h =$$ </p>
                       <input class="question-input question-input4" type="number"/>
-                      <p class="question-unit question-unit4">W/m<sup>2</sup> K</p>
+                      <p class="question-unit question-unit4">$$W/m^2K$$</p>
                       <p class="correct-answer correct-answer4 hide"></p>
                       <button class="btn btn-check btn-check4">Check</button>
                     </div>
@@ -271,12 +267,12 @@
                     <div class="question-five">
                       <div class="question-title">Heat transfer rate</div>
                       <div class="question-formula"><label for="gvalue"><i></i></label><span style="font-size: large;" class="frac">
-                        <p>Qc = h.A.(Ts - Ta)
+                        <p>$$Qc = h.A.(T_s - T_a)$$
                         </p>
-                        <p>A = &pi;.Ds.L</p></span> </div>
-                      <p class="question-label">Qc = </p>
+                        <p>$$A = \pi.Ds.L$$</p></span> </div>
+                      <p class="question-label">$$Qc =$$ </p>
                       <input class="question-input question-input5" type="number"/>
-                      <p class="question-unit question-unit5">W</p>
+                      <p class="question-unit question-unit5">$$W$$</p>
                       <p class="correct-answer correct-answer5 hide"></p>
                       <button class="btn btn-check btn-check5">Check</button>
                     </div>

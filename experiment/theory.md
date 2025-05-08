@@ -2,11 +2,9 @@
 
 #### User Objectives and Goals:
 
-To determine the total thermal resistance of the composite slab
-
-To determine the total thermal conductivity of the composite slab.
-
-To plot the temperature vs distance graph
+1. To determine the total thermal resistance of the composite slab
+2. To determine the total thermal conductivity of the composite slab.
+3. To plot the temperature vs distance graph
 
 #### Theory
 
@@ -21,11 +19,11 @@ particles. Fig 2 shows experimental setup which demonstrates heat transfer by na
 
 <center>
 
-<br>![alt text](images/5.png)<br>
+![alt text](images/5.png)
 
 Fig 1. Schematic representation of heat transfer by natural convection
 
-<br>![alt text](images/6.png)<br>
+![alt text](images/6.png)
 
 Fig 2. Experimental setup demonstrating heat transfer by natural convection
 
@@ -47,8 +45,15 @@ transfer coefficient for vertical cylinder in natural convection. -->
 
 A vertical Cylinder can be treated as a vertical plate when
 
-<br>![alt text](images/vertical1.png)<br>
+<!-- ![alt text](images/vertical1.png) -->
 
-Therefore,
+$D ≥ \frac{35L}{Gr_L ^{1/4}} $
 
-<br>![alt text](images/vertical2.png)<br> (complex but more accurate)
+Therefore,  
+$Nu = 0.59 Ra_L ^{1/4}$  
+$Nu = 0.1 Ra_L ^{1/3}$  
+$Nu = \{0.825 +  \frac{0.387 Ra_L ^{1/6}}{[1 + (0.492/Pr)^{9/16}]^{8/27}}\}^2$
+
+<!-- ![alt text](images/vertical2.png)    -->
+
+(complex but more accurate)
