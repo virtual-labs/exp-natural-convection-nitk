@@ -1,0 +1,431 @@
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/MOMscript.js
+   22:10  warning  'point' is defined but never used            no-unused-vars
+   30:10  warning  'pointtrans' is defined but never used       no-unused-vars
+   38:10  warning  'pointdisp' is defined but never used        no-unused-vars
+   88:10  warning  'pointdist' is defined but never used        no-unused-vars
+   94:10  warning  'pointjoin' is defined but never used        no-unused-vars
+  110:10  warning  'pointtrace' is defined but never used       no-unused-vars
+  125:1   warning  Mixed spaces and tabs                        no-mixed-spaces-and-tabs
+  129:10  warning  'deg' is defined but never used              no-unused-vars
+  139:10  warning  'drawrect' is defined but never used         no-unused-vars
+  159:10  warning  'drawArrow' is defined but never used        no-unused-vars
+  175:10  warning  'signof' is defined but never used           no-unused-vars
+  180:10  warning  'storeCoordinate' is defined but never used  no-unused-vars
+  187:10  warning  'roundd' is defined but never used           no-unused-vars
+  193:10  warning  'plotgraph' is defined but never used        no-unused-vars
+  203:1   warning  'i' is not defined                           no-undef
+  205:7   warning  'i' is not defined                           no-undef
+  207:20  warning  'i' is not defined                           no-undef
+  207:27  warning  'i' is not defined                           no-undef
+  208:2   warning  'i' is not defined                           no-undef
+  209:6   warning  'i' is not defined                           no-undef
+  212:3   warning  'i' is not defined                           no-undef
+  212:5   warning  'i' is not defined                           no-undef
+  220:10  warning  'pointArc' is defined but never used         no-unused-vars
+  238:10  warning  'drawAnchor' is defined but never used       no-unused-vars
+  239:5   warning  'ctx' is not defined                         no-undef
+  240:5   warning  'ctx' is not defined                         no-undef
+  240:37  warning  'PI2' is not defined                         no-undef
+  241:5   warning  'ctx' is not defined                         no-undef
+  242:5   warning  'ctx' is not defined                         no-undef
+  243:5   warning  'ctx' is not defined                         no-undef
+  246:10  warning  'drawAngleSymbol' is defined but never used  no-unused-vars
+  256:7   warning  'a' is already defined                       no-redeclare
+  260:5   warning  'ctx' is not defined                         no-undef
+  261:5   warning  'ctx' is not defined                         no-undef
+  262:5   warning  'ctx' is not defined                         no-undef
+  263:5   warning  'ctx' is not defined                         no-undef
+  264:5   warning  'ctx' is not defined                         no-undef
+  265:5   warning  'ctx' is not defined                         no-undef
+  266:5   warning  'ctx' is not defined                         no-undef
+  268:5   warning  'ctx' is not defined                         no-undef
+  269:5   warning  'ctx' is not defined                         no-undef
+  270:5   warning  'ctx' is not defined                         no-undef
+  271:2   warning  'ctx' is not defined                         no-undef
+  272:5   warning  'ctx' is not defined                         no-undef
+  273:2   warning  'ctx' is not defined                         no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/MOMscript_ver2.js
+   22:10  warning  'point' is defined but never used       no-unused-vars
+   30:10  warning  'pointtrans' is defined but never used  no-unused-vars
+   38:10  warning  'pointdisp' is defined but never used   no-unused-vars
+   88:10  warning  'pointdist' is defined but never used   no-unused-vars
+   94:10  warning  'pointjoin' is defined but never used   no-unused-vars
+  111:10  warning  'pointtrace' is defined but never used  no-unused-vars
+  129:10  warning  'deg' is defined but never used         no-unused-vars
+  139:10  warning  'drawrect' is defined but never used    no-unused-vars
+  159:10  warning  'drawArrow' is defined but never used   no-unused-vars
+  175:10  warning  'signof' is defined but never used      no-unused-vars
+  181:10  warning  'roundd' is defined but never used      no-unused-vars
+  187:10  warning  'plotgraph' is defined but never used   no-unused-vars
+  197:1   warning  'i' is not defined                      no-undef
+  199:7   warning  'i' is not defined                      no-undef
+  201:20  warning  'i' is not defined                      no-undef
+  201:27  warning  'i' is not defined                      no-undef
+  202:2   warning  'i' is not defined                      no-undef
+  203:6   warning  'i' is not defined                      no-undef
+  206:3   warning  'i' is not defined                      no-undef
+  206:5   warning  'i' is not defined                      no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/example.js
+   1:13  warning  'require' is not defined  no-undef
+   7:5   warning  '$A' is not defined       no-undef
+   8:5   warning  '$x' is not defined       no-undef
+   9:5   warning  '$result' is not defined  no-undef
+   9:21  warning  '$A' is not defined       no-undef
+   9:25  warning  '$x' is not defined       no-undef
+  10:17  warning  '$result' is not defined  no-undef
+  19:5   warning  '$A' is not defined       no-undef
+  20:5   warning  '$x' is not defined       no-undef
+  21:5   warning  '$result' is not defined  no-undef
+  21:21  warning  '$A' is not defined       no-undef
+  21:25  warning  '$x' is not defined       no-undef
+  22:17  warning  '$result' is not defined  no-undef
+  33:5   warning  '$A' is not defined       no-undef
+  34:5   warning  '$x' is not defined       no-undef
+  35:5   warning  '$result' is not defined  no-undef
+  35:21  warning  '$A' is not defined       no-undef
+  35:25  warning  '$x' is not defined       no-undef
+  36:17  warning  '$result' is not defined  no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/gauss-jordan.js
+   25:16  warning  'i' is already defined    no-redeclare
+  110:12  warning  'i' is already defined    no-redeclare
+  124:1   warning  'exports' is not defined  no-undef
+  147:1   warning  'exports' is not defined  no-undef
+  151:8   warning  'exports' is not defined  no-undef
+  154:12  warning  'module' is not defined   no-undef
+  154:41  warning  'module' is not defined   no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/gauss.js
+  71:1  warning  'module' is not defined  no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/graph.ob.js
+  1:745  warning  'b' is already defined  no-redeclare
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/graph_line_use.ob.js
+  1:105  warning  'graphline' is defined but never used  no-unused-vars
+  1:165  warning  'CanvasJS' is not defined              no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/graph_use.ob.js
+  13:10  warning  'drawgraph' is defined but never used  no-unused-vars
+  14:21  warning  'CanvasJS' is not defined              no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/graph_use2.ob.js
+  12:10  warning  'drawgraph2' is defined but never used  no-unused-vars
+  22:21  warning  'CanvasJS' is not defined               no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/jquery-3.6.0.js
+     17:44  warning  'module' is not defined                                                    no-undef
+     25:5   warning  'module' is not defined                                                    no-undef
+    142:13  warning  'Symbol' is already defined as a built-in global variable                  no-redeclare
+    717:22  warning  Unexpected control character(s) in regular expression: \x1f, \x1f          no-control-regex
+    779:50  warning  Empty block statement                                                      no-empty
+   2185:38  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   3205:16  warning  Unnecessary escape character: \/                                           no-useless-escape
+   3507:52  warning  Empty block statement                                                      no-empty
+   4584:21  warning  Empty block statement                                                      no-empty
+   5051:28  warning  Unnecessary escape character: \/                                           no-useless-escape
+   5268:19  warning  Empty block statement                                                      no-empty
+   6564:25  warning  Empty block statement                                                      no-empty
+   9171:17  warning  Empty block statement                                                      no-empty
+   9819:28  warning  'urlAnchor.href' is assigned to itself                                     no-self-assign
+  10269:17  warning  Empty block statement                                                      no-empty
+  11162:39  warning  'define' is not defined                                                    no-undef
+  11163:5   warning  'define' is not defined                                                    no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/jquery-ui.min.js
+  5:4185    warning  'jQuery' is not defined                                                    no-undef
+  5:4352    warning  Empty block statement                                                      no-empty
+  5:5584    warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  5:10572   warning  'jQuery' is not defined                                                    no-undef
+  5:10591   warning  't' is defined but never used                                              no-unused-vars
+  5:13289   warning  'jQuery' is not defined                                                    no-undef
+  5:13308   warning  't' is defined but never used                                              no-unused-vars
+  5:31605   warning  'jQuery' is not defined                                                    no-undef
+  5:31624   warning  't' is defined but never used                                              no-unused-vars
+  5:37411   warning  'jQuery' is not defined                                                    no-undef
+  5:37430   warning  't' is defined but never used                                              no-unused-vars
+  5:54616   warning  'jQuery' is not defined                                                    no-undef
+  5:54635   warning  't' is defined but never used                                              no-unused-vars
+  5:58560   warning  'jQuery' is not defined                                                    no-undef
+  5:58579   warning  't' is defined but never used                                              no-unused-vars
+  5:66334   warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:82082   warning  'jQuery' is not defined                                                    no-undef
+  5:82090   warning  'jQuery' is not defined                                                    no-undef
+  5:82869   warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:83062   warning  Unnecessary escape character: \%                                           no-useless-escape
+  5:83086   warning  Unnecessary escape character: \%                                           no-useless-escape
+  5:83110   warning  Unnecessary escape character: \%                                           no-useless-escape
+  5:83525   warning  Unnecessary escape character: \%                                           no-useless-escape
+  5:83549   warning  Unnecessary escape character: \%                                           no-useless-escape
+  5:87951   warning  Empty block statement                                                      no-empty
+  5:88042   warning  Empty block statement                                                      no-empty
+  5:88669   warning  'jQuery' is not defined                                                    no-undef
+  5:89422   warning  'jQuery' is not defined                                                    no-undef
+  5:94864   warning  'jQuery' is not defined                                                    no-undef
+  5:94883   warning  't' is defined but never used                                              no-unused-vars
+  5:103065  warning  'jQuery' is not defined                                                    no-undef
+  5:103084  warning  't' is defined but never used                                              no-unused-vars
+  5:110029  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:110031  warning  Unnecessary escape character: \[                                           no-useless-escape
+  5:110046  warning  Unnecessary escape character: \^                                           no-useless-escape
+  5:110650  warning  'jQuery' is not defined                                                    no-undef
+  5:110669  warning  't' is defined but never used                                              no-unused-vars
+  5:117665  warning  'jQuery' is not defined                                                    no-undef
+  5:121091  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:130083  warning  Empty block statement                                                      no-empty
+  5:138773  warning  Unexpected constant condition                                              no-constant-condition
+  5:141573  warning  Empty block statement                                                      no-empty
+  5:141704  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:150026  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:150075  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:153722  warning  'jQuery' is not defined                                                    no-undef
+  5:153741  warning  't' is defined but never used                                              no-unused-vars
+  5:164151  warning  'jQuery' is not defined                                                    no-undef
+  5:164170  warning  't' is defined but never used                                              no-unused-vars
+  5:164972  warning  'jQuery' is not defined                                                    no-undef
+  5:164991  warning  't' is defined but never used                                              no-unused-vars
+  5:165895  warning  'jQuery' is not defined                                                    no-undef
+  5:165914  warning  't' is defined but never used                                              no-unused-vars
+  5:166493  warning  'jQuery' is not defined                                                    no-undef
+  5:166512  warning  't' is defined but never used                                              no-unused-vars
+  5:167170  warning  'jQuery' is not defined                                                    no-undef
+  5:167189  warning  't' is defined but never used                                              no-unused-vars
+  5:168022  warning  'jQuery' is not defined                                                    no-undef
+  5:168041  warning  't' is defined but never used                                              no-unused-vars
+  5:168217  warning  'jQuery' is not defined                                                    no-undef
+  5:168236  warning  't' is defined but never used                                              no-unused-vars
+  5:168927  warning  'jQuery' is not defined                                                    no-undef
+  5:168946  warning  't' is defined but never used                                              no-unused-vars
+  5:169386  warning  'jQuery' is not defined                                                    no-undef
+  5:169405  warning  't' is defined but never used                                              no-unused-vars
+  5:169858  warning  'jQuery' is not defined                                                    no-undef
+  5:169877  warning  't' is defined but never used                                              no-unused-vars
+  5:174076  warning  'jQuery' is not defined                                                    no-undef
+  5:174095  warning  't' is defined but never used                                              no-unused-vars
+  5:174855  warning  'jQuery' is not defined                                                    no-undef
+  5:174874  warning  't' is defined but never used                                              no-unused-vars
+  5:175495  warning  'jQuery' is not defined                                                    no-undef
+  5:175514  warning  't' is defined but never used                                              no-unused-vars
+  5:176024  warning  'jQuery' is not defined                                                    no-undef
+  5:176043  warning  't' is defined but never used                                              no-unused-vars
+  5:178662  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:178664  warning  Unnecessary escape character: \[                                           no-useless-escape
+  5:178679  warning  Unnecessary escape character: \^                                           no-useless-escape
+  5:185292  warning  'jQuery' is not defined                                                    no-undef
+  5:185911  warning  Unnecessary escape character: \+                                           no-useless-escape
+  5:185913  warning  Unnecessary escape character: \-                                           no-useless-escape
+  5:191464  warning  'jQuery' is not defined                                                    no-undef
+  5:193505  warning  'jQuery' is not defined                                                    no-undef
+  5:193524  warning  't' is defined but never used                                              no-unused-vars
+  5:203278  warning  'jQuery' is not defined                                                    no-undef
+  5:208678  warning  'Globalize' is not defined                                                 no-undef
+  5:208836  warning  'Globalize' is not defined                                                 no-undef
+  5:210008  warning  'jQuery' is not defined                                                    no-undef
+  5:213705  warning  Unnecessary escape character: \/                                           no-useless-escape
+  5:213714  warning  Unnecessary escape character: \[                                           no-useless-escape
+  5:213718  warning  Unnecessary escape character: \^                                           no-useless-escape
+  5:216157  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  5:221543  warning  'jQuery' is not defined                                                    no-undef
+  5:226205  warning  'jQuery' is not defined                                                    no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/jquery.min.js
+  1:1519   warning  Empty block statement                                                      no-empty
+  1:6093   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:7141   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:7562   warning  Empty block statement                                                      no-empty
+  1:7638   warning  Empty block statement                                                      no-empty
+  1:8651   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:10008  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:11116  warning  Unnecessary escape character: \/                                           no-useless-escape
+  1:15261  warning  'ActiveXObject' is not defined                                             no-undef
+  1:17795  warning  Empty block statement                                                      no-empty
+  1:27398  warning  Empty block statement                                                      no-empty
+  1:27718  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:28140  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:28499  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:30610  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:4821   warning  Empty block statement                                                      no-empty
+  2:7463   warning  Empty block statement                                                      no-empty
+  2:13288  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13304  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13793  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:14025  warning  Empty block statement                                                      no-empty
+  2:15171  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15264  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15324  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16527  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:17050  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:17164  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19349  warning  Unnecessary escape character: \=                                           no-useless-escape
+  2:19648  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21727  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23092  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23207  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23666  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23703  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:24141  warning  Empty block statement                                                      no-empty
+  2:24334  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:24646  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:24953  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:26696  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:26933  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:27417  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2:28090  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:30228  warning  Unnecessary escape character: \[                                           no-useless-escape
+  2:30230  warning  Unnecessary escape character: \.                                           no-useless-escape
+  3:4704   warning  Empty block statement                                                      no-empty
+  3:7719   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:7844   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:9957   warning  Empty block statement                                                      no-empty
+  3:13978  warning  Unnecessary escape character: \/                                           no-useless-escape
+  3:16544  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:18435  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:21176  warning  Empty block statement                                                      no-empty
+  3:28773  warning  'define' is not defined                                                    no-undef
+  3:28785  warning  'define' is not defined                                                    no-undef
+  3:28804  warning  'define' is not defined                                                    no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/jquery.ui.touch-punch.js
+  174:4  warning  'jQuery' is not defined  no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/jquery.ui.touch-punch.min.js
+  81:4  warning  'jQuery' is not defined  no-undef
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/plot.js
+   32:10  warning  'MakeDraw' is defined but never used  no-unused-vars
+   52:5   warning  'spac' is already defined             no-redeclare
+   80:10  warning  'i' is already defined                no-redeclare
+  136:10  warning  'i' is already defined                no-redeclare
+  136:15  warning  'len' is already defined              no-redeclare
+  147:11  warning  'i' is already defined                no-redeclare
+  147:16  warning  'len' is already defined              no-redeclare
+  158:12  warning  'i' is already defined                no-redeclare
+  158:17  warning  'len' is already defined              no-redeclare
+  162:12  warning  'i' is already defined                no-redeclare
+  163:4   warning  'j' is not defined                    no-undef
+  164:28  warning  'j' is not defined                    no-undef
+  164:43  warning  'j' is not defined                    no-undef
+  169:11  warning  'i' is already defined                no-redeclare
+
+/home/runner/work/exp-natural-convection-nitk/exp-natural-convection-nitk/experiment/simulation/js/script.js
+    1:5   warning  'triggerBtn' is defined but never used          no-unused-vars
+    2:5   warning  'triggerStatus' is defined but never used       no-unused-vars
+    3:5   warning  'trigger' is assigned a value but never used    no-unused-vars
+   10:7   warning  'vfspinner' is assigned a value but never used  no-unused-vars
+   45:5   warning  'time' is assigned a value but never used       no-unused-vars
+   63:5   warning  'temp1' is assigned a value but never used      no-unused-vars
+   65:5   warning  'tempslope' is assigned a value but never used  no-unused-vars
+   66:5   warning  'tempk' is assigned a value but never used      no-unused-vars
+   68:10  warning  'displayDiv' is defined but never used          no-unused-vars
+  122:10  warning  'simperiod' is defined but never used           no-unused-vars
+  148:3   warning  '$' is not defined                              no-undef
+  207:14  warning  'ctx' is not defined                            no-undef
+  211:3   warning  'ctx' is not defined                            no-undef
+  212:3   warning  'ctx' is not defined                            no-undef
+  217:14  warning  'ctx' is not defined                            no-undef
+  221:3   warning  'ctx' is not defined                            no-undef
+  222:3   warning  'ctx' is not defined                            no-undef
+  228:14  warning  'ctx' is not defined                            no-undef
+  232:3   warning  'ctx' is not defined                            no-undef
+  233:3   warning  'ctx' is not defined                            no-undef
+  245:3   warning  'ctx' is not defined                            no-undef
+  246:7   warning  'y' is assigned a value but never used          no-unused-vars
+  248:3   warning  'ctx' is not defined                            no-undef
+  249:3   warning  'ctx' is not defined                            no-undef
+  250:3   warning  'ctx' is not defined                            no-undef
+  253:3   warning  'ctx' is not defined                            no-undef
+  254:3   warning  'ctx' is not defined                            no-undef
+  255:3   warning  'ctx' is not defined                            no-undef
+  256:3   warning  'ctx' is not defined                            no-undef
+  257:3   warning  'ctx' is not defined                            no-undef
+  259:3   warning  'ctx' is not defined                            no-undef
+  260:3   warning  'ctx' is not defined                            no-undef
+  261:3   warning  'ctx' is not defined                            no-undef
+  262:3   warning  'ctx' is not defined                            no-undef
+  263:3   warning  'ctx' is not defined                            no-undef
+  266:3   warning  'ctx' is not defined                            no-undef
+  267:3   warning  'ctx' is not defined                            no-undef
+  268:3   warning  'ctx' is not defined                            no-undef
+  269:3   warning  'ctx' is not defined                            no-undef
+  270:3   warning  'ctx' is not defined                            no-undef
+  272:3   warning  'ctx' is not defined                            no-undef
+  273:3   warning  'ctx' is not defined                            no-undef
+  274:3   warning  'ctx' is not defined                            no-undef
+  275:3   warning  'ctx' is not defined                            no-undef
+  276:3   warning  'ctx' is not defined                            no-undef
+  278:3   warning  'ctx' is not defined                            no-undef
+  284:3   warning  'canvas' is not defined                         no-undef
+  285:3   warning  'ctx' is not defined                            no-undef
+  285:9   warning  'canvas' is not defined                         no-undef
+  288:3   warning  'ctx' is not defined                            no-undef
+  288:23  warning  'canvas' is not defined                         no-undef
+  288:37  warning  'canvas' is not defined                         no-undef
+  293:18  warning  'canvas' is not defined                         no-undef
+  294:18  warning  'canvas' is not defined                         no-undef
+  298:19  warning  'canvas' is not defined                         no-undef
+  299:19  warning  'canvas' is not defined                         no-undef
+  306:3   warning  'ctx' is not defined                            no-undef
+  309:3   warning  'ctx' is not defined                            no-undef
+  310:3   warning  'ctx' is not defined                            no-undef
+  313:3   warning  'ctx' is not defined                            no-undef
+  316:3   warning  'ctx' is not defined                            no-undef
+  317:3   warning  'ctx' is not defined                            no-undef
+  320:3   warning  'ctx' is not defined                            no-undef
+  321:3   warning  'ctx' is not defined                            no-undef
+  322:3   warning  'ctx' is not defined                            no-undef
+  323:3   warning  'ctx' is not defined                            no-undef
+  324:3   warning  'ctx' is not defined                            no-undef
+  325:3   warning  'ctx' is not defined                            no-undef
+  326:3   warning  'ctx' is not defined                            no-undef
+  327:3   warning  'ctx' is not defined                            no-undef
+  328:3   warning  'ctx' is not defined                            no-undef
+  329:3   warning  'ctx' is not defined                            no-undef
+  330:3   warning  'ctx' is not defined                            no-undef
+  331:3   warning  'ctx' is not defined                            no-undef
+  333:3   warning  'ctx' is not defined                            no-undef
+  334:3   warning  'ctx' is not defined                            no-undef
+  335:3   warning  'ctx' is not defined                            no-undef
+  336:3   warning  'ctx' is not defined                            no-undef
+  337:3   warning  'ctx' is not defined                            no-undef
+  338:3   warning  'ctx' is not defined                            no-undef
+  339:3   warning  'ctx' is not defined                            no-undef
+  340:3   warning  'ctx' is not defined                            no-undef
+  341:3   warning  'ctx' is not defined                            no-undef
+  342:3   warning  'ctx' is not defined                            no-undef
+  343:3   warning  'ctx' is not defined                            no-undef
+  344:3   warning  'ctx' is not defined                            no-undef
+  347:3   warning  'ctx' is not defined                            no-undef
+  348:3   warning  'ctx' is not defined                            no-undef
+  349:3   warning  'ctx' is not defined                            no-undef
+  350:3   warning  'ctx' is not defined                            no-undef
+  351:3   warning  'ctx' is not defined                            no-undef
+  353:3   warning  'ctx' is not defined                            no-undef
+  354:3   warning  'ctx' is not defined                            no-undef
+  355:3   warning  'ctx' is not defined                            no-undef
+  356:3   warning  'ctx' is not defined                            no-undef
+  357:3   warning  'ctx' is not defined                            no-undef
+  358:3   warning  'ctx' is not defined                            no-undef
+  359:3   warning  'ctx' is not defined                            no-undef
+  361:3   warning  'ctx' is not defined                            no-undef
+  363:3   warning  'ctx' is not defined                            no-undef
+  365:3   warning  'ctx' is not defined                            no-undef
+  366:3   warning  'ctx' is not defined                            no-undef
+  367:3   warning  'ctx' is not defined                            no-undef
+  368:3   warning  'ctx' is not defined                            no-undef
+  372:3   warning  'ctx' is not defined                            no-undef
+  377:3   warning  'ctx' is not defined                            no-undef
+  380:10  warning  'comment1' is defined but never used            no-unused-vars
+  433:5   warning  'p' is not defined                              no-undef
+  434:5   warning  'r' is not defined                              no-undef
+  435:26  warning  'p' is not defined                              no-undef
+  435:32  warning  'r' is not defined                              no-undef
+  439:3   warning  'drawgraph' is not defined                      no-undef
+  587:3   warning  'th' is not defined                             no-undef
+  603:10  warning  'movetoTop' is defined but never used           no-unused-vars
+  604:3   warning  'practiceDiv' is not defined                    no-undef
+
+✖ 396 problems (0 errors, 396 warnings)
+

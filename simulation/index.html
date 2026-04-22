@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE - heat transfer - Heat transfer by Natural Convection</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="./css/mathstyle.css" rel="stylesheet" /><!--Stylesheet to display Math functions -->
+
+    <link rel="stylesheet" href="css/query.css" />
+    <!-- <script defer src="https://code.jquery.com/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script defer src="./js/graph.ob.js"></script>
+<script defer src="./js/graph_use.ob.js"></script>
+<script defer src="./js/graph_use2.ob.js"></script>
+  </head>
+  <body>
+    <div class="title-div-container">
+      <div class="title-div">
+        <div class="logo-div">
+          <a href="#"
+            ><img src="images/logo_nitk.png" alt="Logo" class="logo"
+          /></a>
+        </div>
+        <h1>Heat transfer by Natural Convection</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-objective" onclick="displayDiv(this)">
+            <a class="tool-link" title="Objective">
+              <img src="./images/objective.png" alt="Objective" class="icons" />
+            </a>
+            <span>Objective</span>
+          </li>
+          <li class="tool-list tool-description" onclick="displayDiv(this)">
+            <a class="tool-link" title="Description"
+              ><img
+                src="./images/description.png"
+                alt="Description"
+                class="icons"
+            /></a>
+            <span>Description</span>
+          </li>
+
+          <li class="tool-list tool-explore" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"
+              ><img src="./images/explore.png" alt="Explore" class="icons"
+            /></a>
+            <span>Experiment</span>
+          </li>
+          <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Solve"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+            /></a>
+            <span>Solve</span>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Objective</h3>
+
+            <div class="canvas__div">
+              <div class="task-screen objective">
+                <!-- <h3 class="objective__title">Objective</h3> -->
+                <p class="objective__main">
+                  To calculate heat transfer coefficient and heat transfer rate from vertical cylinder in natural convection.
+                </p>
+              </div>
+              <div class="task-screen description hide">
+                <!-- <h3 class="description__title">Description</h3> -->
+                <div class="description-conatiner">
+                  <div class="newimg">
+                  <img src="./images/newmodel.png" alt="apparatus" class="model" /></div>
+
+                  <div class="model-detail">
+                    <p>Diameter, d = 44mm</p>
+                    <p>Length t = 500mm</p>
+                    <!-- <p>C<sub>p</sub> = 4.18kJ/kg-K</p>
+                    <p>Length of shaded area = 300mm</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="task-screen explore hide">
+                <div class="explore-controls">
+                  <div class="voltage-set">
+                    <p>Voltage</p>
+                    <button class="btn btn-start" disabled>On</button>
+                    <button class="btn btn-reset"  disabled >Reset</button>
+                  </div>
+                  <div class="input-group">
+                    <!-- <input
+                      type="radio"
+                      name="voltage"
+                      id="v10"
+                      value="10"
+                      class="voltage"
+                    /> -->
+                    <!-- <label for="v10" class="voltage_label"></label> -->
+                  </div>
+                  <!-- <div class="trigger-slider div-white">
+                    <p class="trigger-status status-off">OFF</p>
+                    <div class="trigger-btn">
+                    </div>
+                  </div> -->
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="voltage"
+                      id="v10.81"
+                      value="10.81"
+                      class="voltage"
+                    />
+                    <label for="v10.81" class="voltage_label">10.81</label>
+                  </div>
+                  <!-- <div class="input-group">
+                    <input
+                      type="radio"
+                      name="voltage"
+                      id="v30"
+                      value="30"
+                      class="voltage"
+                    />
+                    <label for="v30"  class="voltage_label">30V</label>
+                  </div> -->
+                  <div class="temperature-set">
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>1</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp1">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>2</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp2">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>3</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp3">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>4</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp4">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>5</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp5">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>6</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp6">10</span>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">T<sub>7</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp7">10</span>
+                    </div>
+                    <!-- <div class="temperature-group">
+                      <span class="temp-text">T<sub>8</sub> (&deg;C)</span>
+                      <span class="temp-val" id="temp8">10</span>
+                    </div> -->
+                  </div>
+                </div>
+                <p class="comment"></p>
+
+                <canvas
+                  id="simscreen"
+                  width="800"
+                  height="600"
+                  class="canvas"
+                ></canvas>
+                </div>
+                <div class="task-screen practice hide">
+                  
+                  <p id="info">Temperature Gradient</p>
+                  <p class="extra-info hide">Move the cursor to the graph to see the points</p>
+                  <div class="graph-div">
+                    <div class="graph" id="graph"></div>
+                  </div>
+                  <div class="questions">
+                    <!-- <p class="warning"> Please enter a value rounded upto two decimal points</p> -->
+                    <div class="question-one">
+                      <div class="question-title">Volumetric coefficient</div>
+                      <div class="question-formula">$$\beta = \frac{1}{T_m(Mean Temperature)}$$</div>
+                      <p class="question-label"><label for="bvalue">$$ \beta =$$</label> </p>
+                      <input class="question-input question-input1" type="number"/>
+                      <p class="question-unit question-unit1"> $$1/K$$</p>
+                      <p class="correct-answer correct-answer1 hide"></p>
+                      <button class="btn btn-check btn-check1">Check</button>
+                    </div>
+
+                    <div class="question-two">
+                      <div class="question-title">Grashof number</div>
+                      <div class="question-formula" ><label for="gvalue">$$Gr = \frac{L^3.\beta.g(T_s - T_a)}{\gamma^2}$$</label>
+                        <p>$$\gamma = 1.846*10^{-5}m^2/s$$</p>
+                        <p>$$T_s: Surface \space temperature $$</p>
+                        <p>$$T_a:Ambient \space(or\space bulk\space fluid) \space temperature $$</p>
+                        <p>$$g: Acceleration\space due\space to\space gravity$$</p>
+                      </div>
+                      <p class="question-label">$$Gr =$$ </p>
+                      <input class="question-input question-input2" type="number"/>
+                      <p class="question-unit question-unit2"></p>
+                      <p class="correct-answer correct-answer2 hide"></p>
+                      <button class="btn btn-check btn-check2">Check</button>
+                    </div>
+
+                    <div class="question-three">
+                      <div class="question-title">Nusselt Number,</div>
+                      <div class="question-formula" ><label for="gvalue"><i></i></label><span style="font-size: large;" class="frac">
+                        <p style="text-align: left;">$$Nu = 0.53(R_a)^{1/4}, if \space  R_a \lt 10^5$$</p>
+                         <p style="text-align: left;">$$0.56(R_a)^{1/4}, if \space  10^5 \lt R_a \lt 10^8$$</p>
+                          <p style="text-align: left;">$$0.13(R_a)^{1/3}, if \space  10^8 \lt R_a \lt 10^{12}$$</p>
+                        </p>
+                        <p> $$Ra = Gr.Pr .... Pr = 0.697$$</p></div>
+                      <p class="question-label">$$Nu =$$ </p>
+                      <input class="question-input question-input3" type="number"/>
+                      <p class="question-unit question-unit3"></p>
+                      <p class="correct-answer correct-answer3 hide"></p>
+                      <button class="btn btn-check btn-check3">Check</button>
+                    </div>
+
+                    
+                    <div class="question-four">
+                      <div class="question-title">Heat transfer coefficient,</div>
+                      <div class="question-formula"><label for="gvalue"></label>
+                        <p> $$h = \frac{Nu.k}{L}$$
+                        </p>
+                        <p>$$k = 0.02861$$</p></div>
+                      <p class="question-label">$$h =$$ </p>
+                      <input class="question-input question-input4" type="number"/>
+                      <p class="question-unit question-unit4">$$W/m^2K$$</p>
+                      <p class="correct-answer correct-answer4 hide"></p>
+                      <button class="btn btn-check btn-check4">Check</button>
+                    </div>
+
+                    
+                    <div class="question-five">
+                      <div class="question-title">Heat transfer rate</div>
+                      <div class="question-formula"><label for="gvalue"><i></i></label><span style="font-size: large;" class="frac">
+                        <p>$$Qc = h.A.(T_s - T_a)$$
+                        </p>
+                        <p>$$A = \pi.Ds.L$$</p></span> </div>
+                      <p class="question-label">$$Qc =$$ </p>
+                      <input class="question-input question-input5" type="number"/>
+                      <p class="question-unit question-unit5">$$W$$</p>
+                      <p class="correct-answer correct-answer5 hide"></p>
+                      <button class="btn btn-check btn-check5">Check</button>
+                    </div>
+                 </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="js/script.js"></script>
+  <script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
